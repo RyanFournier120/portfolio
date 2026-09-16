@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    color: white !important;
+}
+
+body {
+    overflow-x: hidden;
+    /**background-color: #101010;*/
+    /**background-color: #0C0C0C;*/
+    background: linear-gradient(
+        to bottom,
+        #0C0C0C 0%,
+        #0F0F0F 50%,
+        #0C0C0C 100%
+    );
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    /**background-color: #151617;*/
+    /**background-color: #003B95;*/
+    border-radius: 12px;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+#ola {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+#profissao {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+#descricao {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+.eu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+nav li{
+    transition: 0.5s;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    /**background-color: #2F2FE4;*/
+    background-color: #0A0A0A;
+    padding: 6px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+nav li:hover a {
+    color: #3B82F6 !important;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.apresentacao {
+    position: relative;
+    padding: 80px 100px;
+}
+
+.apresentacao img {
+    position: absolute;
+    width: 320px;
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -50px;
+}
+
+
+
+#sobre {
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 800px 500px;
+    align-items: center;
+    margin-top: 0 auto;
+}
+
+#sobre h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #006199 !important;
+}
+
+#sobre p {
+    max-width: 900px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+#sobre img {
+    width: 250px;
+    justify-self: center;
+    margin-top: -100px;
+}
+
+/**#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 70px;
+}
+
+#sobre h3 {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#sobre p {
+    line-height: 1.6;
+}
+
+#sobre img {
+    width: 250px;
+    height: auto;
+    justify-self: center;
+}*/
+
+
+.tecnologiass {
+    display: flex;
+    gap: 85px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    width: 63%;
+
+    background-color: #1A1C1D;
+    padding: 30px 50px;
+    border-radius: 12px;
+}
+
+.tecnologias {
+    text-align: center;
+    padding: 120px;
+    row-gap: 10px;
+}
+
+
+.tecnologia {
+    /**border: 3px solid black;*/
+    padding: 0px;
+    /**border-radius: 10px;*/
+    /**border-color: #1A1C1D;*/
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.tecnologia:hover {
+    
+    transform: scale(1.1);
+}
+
+.tecnologia img {
+    width: auto;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#desc {
+    text-align: center;
+}
+
+
+#projetos {
+    padding: 80px;
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 150px;
+    justify-content: center;
+}
+
+.projeto {
+    width: 430px;
+    height: 430px;
+    background-color: #1A1C1D;
+    border: 1px solid #1A3A52;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.projeto img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.projeto p {
+    margin: 15px 20px;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projeto:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.projeto a {
+    display: block;
+    margin: 0 20px;
+    margin-top: 25px;
+    padding: 12px;
+    text-align: center;
+    background-color: #006199;
+    border-radius: 60px;
+    text-align: center;
+}
